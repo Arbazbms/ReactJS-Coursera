@@ -39,6 +39,7 @@ class Header extends Component {
   }
 
   toggleModal() {
+    //it flips the isModelOpen eiher to true or false
     this.setState({
       isModalOpen: !this.state.isModalOpen,
     });
