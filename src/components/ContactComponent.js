@@ -26,8 +26,20 @@ class Contact extends Component {
   }
 
   handleSubmit(values) {
-    console.log("Current State is: " + JSON.stringify(values));
-    alert("Current State is: " + JSON.stringify(values));
+    // console.log("Current State is: " + JSON.stringify(values));
+    // alert("Current State is: " + JSON.stringify(values));
+    this.props.postFeedback(
+      //this.props.dishId,
+      values.firstname,
+      values.lastname,
+      values.comment,
+      values.lastname,
+      values.telnum,
+      values.email,
+      values.agree,
+      values.contactType,
+      values.message
+    );
     // event.preventDefault();
     this.props.resetFeedbackForm();
   }
